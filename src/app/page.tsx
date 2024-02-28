@@ -3,17 +3,10 @@ import {ArtCollection} from "@/app/components/ArtCollection";
 
 export default function Home() {
 
-    function updateColor(id: string) {
-
-
-
-        return undefined;
-    }
-
     return (
         <main
             className="flex flex-row min-h-screen justify-between overflow-y-hidden bg-eggshell items-center">
-            <div className="flex flex-col h-90vh w-1/5 bg-eggshell2 justify-between">
+            <div className="flex flex-col h-90vh w-1/6 bg-eggshell2 justify-between">
                 <h2 id="title" className="text-normal-text font-Righteous font-bold text-6xl text-center">
                     Sam Sparling
                 </h2>
@@ -22,8 +15,6 @@ export default function Home() {
                           className="text-normal-text font-Righteous font-bold text-2xl text-center hover:text-text-highlight transition-colors ease-in-out"
                     >About Me</Link>
                     <Link href="#FinishedPieces"
-                          id="fin"
-                          onClick={updateColor("fin")}
                        className="text-normal-text font-Righteous font-bold text-2xl text-center hover:text-text-highlight transition-colors ease-in-out">Finished
                         Pieces</Link>
                     <Link href="#Sketches"
@@ -45,7 +36,7 @@ export default function Home() {
             </div>
             <div className="line w-2 min-h-screen bg-border-line"></div>
             <div
-                className="max-h-screen w-4/5 justify-items-center items-center flex flex-col overflow-y-scroll sm:scroll-smooth overflow-x-hidden">
+                className="max-h-screen w-5/6 justify-items-center items-center flex flex-col overflow-y-scroll sm:scroll-smooth overflow-x-hidden">
                 <section id={"aboutMe"}
                          className="bg-gradient-to-b from-eggshell from-50% to-background to-100% w-full flex flex-row min-h-screen justify-center justify-items-center">
                     <img src="/Glove.png" className="max-h-70dvh relative translate-y-28" alt={"Portrait"}/>
