@@ -1,10 +1,11 @@
 import React from "react";
+import Image from "next/image";
 
 // @ts-ignore
 export function CustomImage({imagePath}) {
     
     return (
-       <img src={imagePath} alt={"art piece"}
+       <Image src={imagePath} alt={"art piece"}
             className={"max-h-70dvh transition-opacity animate-fadeIn"}
        />
     );

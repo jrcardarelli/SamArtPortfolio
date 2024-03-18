@@ -41,9 +41,10 @@ export default function Home() {
                 className="max-h-screen w-5/6 justify-items-center items-center flex flex-col overflow-y-scroll sm:scroll-smooth overflow-x-hidden">
                 <section id={"aboutMe"}
                          className="bg-gradient-to-b from-eggshell from-50% to-background to-100% w-full flex flex-row min-h-screen justify-center justify-items-center">
-                    <Image src={"/Glove.png"} className="max-h-70dvh relative translate-y-28" alt={"Portrait"} width={500} height={800}/>
+                    <div className="bg-gradient-radial from-eggshell to-yellow min-h-96 max-h-96 min-w-96 max-w-96 mt-64 ml-44 rotate-12"/>
+                    <Image src={"/Glove.png"} className="max-h-70dvh mt-28 relative -ml-[26rem]" alt={"Portrait"} width={500} height={800}/>
                     <div className="flex flex-col gap-4 justify-center items-center w-2/5">
-                        <h1 className="text-normal-text font-Righteous font-bold text-6xl text-center">Hi, I'm
+                        <h1 className="text-normal-text font-Righteous font-bold text-6xl text-center">Hi, I am
                             Sam</h1>
                         <p className="text-normal-text font-Righteous font-bold text-2xl text-center">I do art
                             things. Here is a portfolio of my art things. I do art
