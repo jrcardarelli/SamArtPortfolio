@@ -1,5 +1,7 @@
 import Link from "next/link";
 import {ArtCollection} from "@/app/components/ArtCollection";
+import Image from "next/image";
+
 
 export default function Home() {
 
@@ -39,7 +41,7 @@ export default function Home() {
                 className="max-h-screen w-5/6 justify-items-center items-center flex flex-col overflow-y-scroll sm:scroll-smooth overflow-x-hidden">
                 <section id={"aboutMe"}
                          className="bg-gradient-to-b from-eggshell from-50% to-background to-100% w-full flex flex-row min-h-screen justify-center justify-items-center">
-                    <img src="/Glove.png" className="max-h-70dvh relative translate-y-28" alt={"Portrait"}/>
+                    <Image src={"/Glove.png"} className="max-h-70dvh relative translate-y-28" alt={"Portrait"} width={500} height={800}/>
                     <div className="flex flex-col gap-4 justify-center items-center w-2/5">
                         <h1 className="text-normal-text font-Righteous font-bold text-6xl text-center">Hi, I'm
                             Sam</h1>
